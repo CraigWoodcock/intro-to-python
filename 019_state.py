@@ -13,5 +13,8 @@ print(f"b is {b}")
 
 # Was it what you expected?
 
+# both values will be the same as 'b' because we set 'a=b'. 
+
+
 # Try to puzzle it out, and then move on to
 # 020_state_tables.py
