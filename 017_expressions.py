@@ -3,14 +3,14 @@
 # Now, let's look at expressions. You've actually already
 # seen them a lot!
 
-added = 2 + 3
+# added = 2 + 3
 
-# Is this an expression? Not quite. It does contain an
-# expression though.
+# # Is this an expression? Not quite. It does contain an
+# # expression though.
 
-# The expression part is this:
+# # The expression part is this:
 
-2 + 3
+# 2 + 3
 
 # The expression is the fundamental unit of computation in
 # your program. It is the combination of data and operators
@@ -18,12 +18,12 @@ added = 2 + 3
 
 # Here are some more examples of expressions:
 
-2            # Evaluates to: 2
-2 + 3        # Evaluates to: 5
-2 * 3        # Evaluates to: 6
-2 + 3 * 4    # Evaluates to: ...???
+# 2            # Evaluates to: 2
+# 2 + 3        # Evaluates to: 5
+# 2 * 3        # Evaluates to: 6
+# 2 + 3 * 4    # Evaluates to: ...???
 
-# Well, what is that last one?
+# # Well, what is that last one?
 #
 # Do we take 2 + 3 making 5, then multiply by 4 to get 20?
 #
@@ -48,7 +48,7 @@ added = 2 + 3
 #
 # @TASK: Try this using `python` in the shell:
 
-(2 + 3) * 4
+# (2 + 3) * 4
 
 # As you can see, we can use brackets to control the order
 # the expressions are evaluated.
@@ -68,12 +68,13 @@ added = 2 + 3
 def add_one(num):
   return num + 1
 
+print(add_one(5))
 # Here are some more expressions:
 
-add_one(2)          # Evaluates to 3
-add_one(3)          # Evaluates to 4
-add_one(4) * 3      # Evaluates to 15
-2 + add_one(4) * 3  # Evaluates to 17
+# add_one(2)          # Evaluates to 3
+# add_one(3)          # Evaluates to 4
+# add_one(4) * 3      # Evaluates to 15
+# 2 + add_one(4) * 3  # Evaluates to 17
 
 # What to take from this? Calling a function is also an
 # expression! Many things in Python are expressions, and we
@@ -91,10 +92,13 @@ add_one(4) * 3      # Evaluates to 15
 
 # To finish off, here's a real mind-bender:
 
-add_one(add_one(add_one(add_one(add_one(add_one(1))))))
+print(add_one(add_one(add_one(add_one(add_one(add_one(1)))))))
 
 # @TASK: What do you think that evaluates to? And why? Give
 # it a go and find out.
+
+# this is because we pass in 1 and then we call the add-one() function 6 times,
+# each time the function is called, 1 gets added to our original value.
 
 # @TASK: Play around with building complex expressions in
 # the space below.
