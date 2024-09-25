@@ -58,7 +58,8 @@ print("Function: greet")
 def greet(name):
 	# Return the string "Hello, Kay!" where "Kay" is the
 	# name provided
-	pass
+	greeting = (f"Hello, {name}!")
+	return greeting
 
 check_that_these_are_equal(
 	greet("Chuang-tzu"),
