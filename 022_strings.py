@@ -5,7 +5,7 @@
 # You've already seen the string syntax dotted around. Here
 # it is:
 
-my_name = "Kay"
+my_name = "Kay 0125"
 print(my_name)
 
 # They are surrounded by double quotes:
@@ -21,7 +21,7 @@ my_name = 'Kay'
 
 # Try out creating a string with your name in it:
 
-your_name = ???
+your_name = 'craig'
 print(your_name)
 
 # @TASK: Check your work by running this file with:
