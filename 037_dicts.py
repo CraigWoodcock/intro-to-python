@@ -18,6 +18,8 @@
 my_dictionary = {
   "String": "A sequence of characters",
   "List": "A sequence of any item",
+  "age": 23,
+  "Dictionary" : "A collection of Key/Value pairs",
 }
 
 # Note that:
@@ -35,11 +37,15 @@ print("  " + my_dictionary["String"])
 print("A List is:")
 print("  " + my_dictionary["List"])
 
+print("My age is:")
+print(f" ",{my_dictionary["age"]})
+
 # @TASK: Add a definition for a "Dictionary" to our
 # dictionary above by editing the code around line 21. Then
 # print out the value below.
 
 print("A Dictionary is:")
+print("  " + my_dictionary["Dictionary"])
 # ...
 
 # Once you're done, move on to 038_dict_operations.py
