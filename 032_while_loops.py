@@ -21,7 +21,7 @@ else:
 # A while loop is perhaps the most simple:
 
 i = 0 # We call this the counter variable
-while i < 10:
+while i <= 10:
   print(f"The number is now {i}")
   i = i + 1
 
@@ -49,7 +49,8 @@ print("Function: add_cats_repeatedly")
 # => ['cats', 'cats', 'cats']
 
 def add_cats_repeatedly(word_list, count):
-  # ...
+  while word_list.count("cats") < count:
+    word_list.append("cats")
   return word_list
 
 check_that_these_are_equal(
